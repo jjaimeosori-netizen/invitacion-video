@@ -140,14 +140,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "FELIPE": 1
 };
 
-const parametros = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
+const nombre = params.get("nombre");
 
-const nombre = parametros.get("invitado") || "INVITADO ESPECIAL";
+const nombreDiv = document.getElementById("nombreInvitado");
+const cuposDiv = document.getElementById("cuposInvitado");
 
-const cupos = invitados[nombre] || 1;
-
-document.getElementById("nombreInvitado").innerHTML =
-    nombre.toUpperCase();
-
-document.getElementById("cuposInvitado").innerHTML =
-    `${cupos} PERSONA(S)`;
+if (nombreDiv && cuposDiv && nombre) {
+    const cupos = invitados[key];
+  nombreDiv.textContent = key;
+  cuposDiv.textContent = (invitados[key] || 1) + " PERSONA(S)";
+}
