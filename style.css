@@ -42,7 +42,7 @@ body{
 
 .nombre-invitado{
     position:absolute;
-    top: 79%;
+    top: 55%;
     left:50%;
     transform:translateX(-50%);
 
