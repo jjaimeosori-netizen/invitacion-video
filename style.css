@@ -42,7 +42,7 @@ body{
 
 .nombre-invitado{
     position:absolute;
-    top:155%;
+    top:73%;
     left:50%;
     transform:translateX(-50%);
 
@@ -60,7 +60,7 @@ body{
 
 .cupos{
     position:absolute;
-    top:-20%;
+    top:20%;
     left:66%;
     transform:translateX(-50%);
 
@@ -94,7 +94,7 @@ body{
 
 .botones{
     position:absolute;
-    bottom:45%;
+    bottom:81%;
 
     left:50%;
     transform:translateX(-50%);
